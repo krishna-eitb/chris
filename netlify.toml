@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/reveal/*"
+  to = "/reveal/[name]"
+  status = 200
