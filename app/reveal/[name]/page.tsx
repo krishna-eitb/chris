@@ -21,24 +21,29 @@
 //     </div>
 //   );
 // }
+import { notFound } from "next/navigation";
+
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-import { notFound } from "next/navigation";
-
 export default async function RevealPage({ params }: { params: Promise<{ name: string }> }) {
-  const { name } = await params; // <-- unwrap the Promise
+  const { name } = await params;
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://eitbchris.netlify.app";
 
-  const res = await fetch(`${baseUrl}/api/assign`, { cache: "no-store" });
-  if (!res.ok) return notFound();
+  let data;
+  try {
+    const res = await fetch(`${baseUrl}/api/assign`, { cache: "no-store" });
+    if (!res.ok) return notFound();
+    data = await res.json();
+  } catch (err) {
+    return notFound();
+  }
 
-  const data = await res.json();
   const pair = data.find((p: any) => p.giver === name);
-
   if (!pair) return notFound();
 
+  // ✅ Make sure your JSX is inside the return statement
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-red-50">
       <h1 className="text-4xl font-bold text-green-700 mb-4">🎁 Hey {name}!</h1>
@@ -47,5 +52,4 @@ export default async function RevealPage({ params }: { params: Promise<{ name: s
       <p className="text-gray-500 mt-5">Merry Christmas! 🎄</p>
     </div>
   );
-}
-
+} // 
