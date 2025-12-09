@@ -25,7 +25,7 @@ export const dynamic = "force-dynamic";
 
 export default async function RevealPage({ params }: { params: { name: string } }) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+    const baseUrl = "https://eitbchris.netlify.app/" || "https://eitbchris.netlify.app";
     const res = await fetch(`${baseUrl}/api/assign`, { cache: "no-store" });
 
     // Check if response is actually JSON
