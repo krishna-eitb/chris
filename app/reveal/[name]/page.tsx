@@ -6,7 +6,7 @@ export async function generateStaticParams() {
 }
 
 export default async function RevealPage({ params }: { params: { name: string } }) {
-  const res = await fetch(`https://eitbchris.netlify.app//api/assign`);
+  const res = await fetch(`https://eitbchris.netlify.app/api/assign`);
   const data = await res.json();
   const pair = data.find((p: any) => p.giver === params.name);
 
