@@ -21,6 +21,7 @@
 //     </div>
 //   );
 // }
+import RevealClient from "@/app/RevealClient";
 import { notFound } from "next/navigation";
 
 export const dynamic = "force-dynamic";
@@ -45,11 +46,12 @@ export default async function RevealPage({ params }: { params: Promise<{ name: s
 
   // ✅ Make sure your JSX is inside the return statement
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-red-50">
-      <h1 className="text-4xl font-bold text-green-700 mb-4">🎁 Hey {name}!</h1>
-      <p className="text-xl">Your Chrisma Chris partner is:</p>
-      <p className="text-3xl font-bold text-red-600 mt-3">{pair.receiver}</p>
-      <p className="text-gray-500 mt-5">Merry Christmas! 🎄</p>
-    </div>
+    <RevealClient name={name} receiver={pair.receiver}/>
   );
 } // 
+{/* <div className="h-screen flex flex-col justify-center items-center bg-red-50">
+      <h1 className="text-4xl font-bold text-green-700 mb-4">🎁 Hey {name}!</h1>
+      <p className="text-xl">Your Chrisma Chris partner is:</p>
+      <p className="text-3xl font-bold text-red-600 mt-3">{}</p>
+      <p className="text-gray-500 mt-5">Merry Christmas! 🎄</p>
+    </div> */}
