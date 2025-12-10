@@ -34,7 +34,7 @@ export default async function RevealPage({ params }: { params: Promise<{ name: s
 
   let data;
   try {
-    const res = await fetch(`${baseUrl}/api/assign`, { cache: "no-store" });
+    const res = await fetch(`${baseUrl}/api/eitbassign`, { cache: "no-store" });
     if (!res.ok) return notFound();
     data = await res.json();
   } catch (err) {

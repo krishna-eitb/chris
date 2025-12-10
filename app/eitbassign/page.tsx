@@ -59,7 +59,7 @@ export default function AssignPage() {
 
       const qrMap: Record<string, string> = {};
       for (const pair of data) {
-        const url = `https://eitbchris.netlify.app/reveal/${pair.giver}`;
+        const url = `https://eitbchris.netlify.app/surprise/${pair.giver}`;
         const qr = await QRCode.toDataURL(url);
         qrMap[pair.giver] = qr;
       }
