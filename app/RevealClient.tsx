@@ -84,7 +84,7 @@ export default function RevealClient({
         transition={{ delay: 0.6 }}
         className="text-xl text-white"
       >
-        Your Chrisma Chris partner is:
+        Your Chris Child is:
       </motion.p>
 
       <motion.p
