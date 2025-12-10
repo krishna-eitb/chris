@@ -426,7 +426,7 @@ export default function AssignPage() {
 
         if (percent > 60) {
           // ✅ Play wow.mp3 once revealed
-          const audio = new Audio("/wow.mp3");
+          const audio = new Audio("/wow1.mp3");
           audio.volume = 0.8; // moderate volume
           audio.play().catch((err) => console.warn("Audio play blocked:", err));
 
