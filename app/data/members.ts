@@ -1,6 +1,6 @@
 export const members = [
-  "Krishna", "Umapathi", "Sarswathi", "Hari", "Rahul", "Meera", "Anu", 
-  "Ravi", "Lakshmi", "Deepa", "Gokul", "Karthik", "Divya", "Suresh", 
-  "Preethi", "Manoj", "Shreya", "Ramesh", "Geetha", "Kavin", "Pooja", 
-  "Naveen", "Keerthana", "Ajay", "Swathi", "Bala", "Anitha", "Hari", "Lavanya"
+  "Krishna", "Umapathi", "Sarswathi", "Hari", "Malini", "Ashwin", "Stalin", 
+  "Jency", "YuvaShree", "Kiruthika", "Rohit", "Revanth", "Nithish", "Arjun", 
+  "Karuniya", "Sharan", "Gunashree", "Saipavan", "Balaji", "Sreenivasulu ", "Akash", 
+  "Roslin", "Monisha", "Charu", "Sanjith", "Siva", "AshwinKumar", "MuthuKumaran", "SamratAshok","Ilamaran","SivaPratheesh"
 ];
