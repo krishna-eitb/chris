@@ -31,10 +31,10 @@ import { NextResponse } from "next/server";
 
 // List of members
 const members = [
-  "Krishna", "Umapathi", "Saraswathi", "Hari", "Malini", "Ashwin", "Stalin", 
+  "Krishna", "Umapathi", "Saraswathi", "Hari", "Malini", "AshwinS", "Stalin", 
   "Jency", "YuvaShree", "Kiruthika", "Rohit", "Revanth", "Nithish", 
   "Karuniya", "Sharan", "Gunashree", "Saipavan", "Balaji", "Sreenivasulu", "Akash", 
-  "Roslin", "Monisha", "Charu", "Sanjith", "Siva", "AshwinKumar", "MuthuKumaran", "SamratAshok","Ilamaran","SivaPratheesh"
+  "Roslin", "Monisha", "Charu", "Sanjith", "SivaPrasad", "AshwinKumar", "MuthuKumaran", "SamratAshok","Ilamaran","SivaPratheesh"
 ];
 
 // This will cache the pairs in memory (not recreated unless server restarts)
