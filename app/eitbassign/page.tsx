@@ -107,7 +107,7 @@ export default function AssignPage() {
       </div>
 
       <h1 className="text-4xl md:text-5xl font-extrabold mb-10 mt-16 text-yellow-300 drop-shadow-lg">
-        🎄 Christmas Santa EITB 🎅
+        🎄 Secret Santa EITB 🎅
       </h1>
 
       {/* 🎁 QR Cards */}
