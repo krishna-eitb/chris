@@ -574,7 +574,7 @@ export default function AssignPage() {
     Nithish: "/wow.mp3",
     Karuniya: "/rose.mp3",
     Sharan: "/sharan.mp3",
-    Gunashree: "/gunashree.mp3",
+    Gunashree: "/guna.mp3",
     Saipavan: "/saii.mp3",
     Balaji: "/balaji.mp3",
     Sreenivasulu: "/wow.mp3",
