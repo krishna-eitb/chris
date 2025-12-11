@@ -559,7 +559,7 @@ export default function AssignPage() {
 
   // 🎵 Specific audio for each member
   const soundMap: Record<string, string> = {
-    Krishna: "/wow.mp3",
+    Krishna: "/krishnaa.mp3",
     Umapathi: "/umapathi.mp3",
     Saraswathi: "/sars.mp3",
     Hari: "/har.mp3",
